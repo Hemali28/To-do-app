@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar To-Do App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="light">
+  <button id="toggle-mode">Toggle Dark/Light</button>
+  <div id="calendar-container"></div>
+  <div id="todo-container" style="display: none;">
+    <h3 id="todo-date"></h3>
+    <ul id="todo-list"></ul>
+    <input type="text" id="new-task" placeholder="Add a task..." />
+    <button id="add-task">Add</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
+</body>
+</html>
